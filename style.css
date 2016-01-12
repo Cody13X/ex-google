@@ -27,6 +27,12 @@ ul > a:hover {
   filter: invert(0);
   /*background-image: url('settings.png');*/
 }
+.apps {
+  width: 500px;
+  height: 620px;
+  position: absolute;
+  margin-left: 7%;
+}
 .cloche {
   display: block;
   margin-top: -30px;
