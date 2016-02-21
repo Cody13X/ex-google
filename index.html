@@ -12,30 +12,29 @@
 <body>
   <header>
     <div class="bandeau">
-      <ul>
-        <li>Yannick</li>
-        <a href="https://accounts.google.com/"><li>Gmail</li></a>
-        <a href="https://www.google.fr/imghp?"><li>Images</li></a>
+      <div class="nav">
+        <span>Yannick</span>
+        <a href="https://accounts.google.com/">Gmail</a>
+        <a href="https://www.google.fr/imghp?">Images</a>
         <a class="sethover"><img src="settings.png"/></a>
-        <a class="cloche"><img src="alert.png"/></a>
-      </ul>
-      <div class="apps"></div>
-      <div class="notif"></div>
+        <a class="cloche"><img src="not.png"/></a>
+        <a class="account"><img src="account.png"/></a>
+        <div class="apps"></div>
+      </div>
     </div>
   </header>
   <section>
-    <div class="corps">
-      <div class="lien">
-        <a href="http://www.google.com"><span class="fl">B</span><span class="sl">o</span><span class="tl">w</span><span class="fol">i</span><span class="fil">e</span>
-        <p>Français</p>
-        </a>
-      </div>
-      <input type="text" class="search"/>
-      <div class="boutons">
-        <button>Recherche Google</button>
-        <button class="chance">J'ai de la chance</button>
-      </div>
+    <div class="lien">
+      <span class="fl">B</span><span class="sl">o</span><span class="tl">w</span><span class="fol">i</span><span class="fil">e</span>
+      <div class="subtext">France</div>
     </div>
+    <form action="/search" id="f" method="get">
+      <div class="input">
+        <div id="input-text">Rechercher sur Bowie ou saisir une URL</div>
+        <input id="q" aria-hidden="true" autocomplete="off" name="q" tabindex="-1" type="url" jsaction="mousedown:ntp.fkbxclk" style="opacity: 0;">
+        <div id="speech" tabindex="0" aria-label="Utiliser la recherche vocale" style="display: block;"></div>
+      </div>
+    </form>
   </section>
 
 </body>
